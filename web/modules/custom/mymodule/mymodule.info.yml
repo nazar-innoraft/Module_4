@@ -1,6 +1,6 @@
 name: module1
 type: module
-description: 'Nothing to write, I am Nazar that is it!'
+description: Nothing to write, I am Nazar that's it!
 core_version_requirement: ^10
 package: 'Nazar'
 dependencies:
