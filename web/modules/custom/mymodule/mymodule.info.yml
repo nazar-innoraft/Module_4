@@ -1,0 +1,8 @@
+name: module1
+type: module
+description: 'Nothing to write, I am Nazar that is it!'
+core_version_requirement: ^10
+package: 'Nazar'
+dependencies:
+  - drupal:admin_toolbar
+php: 8.2

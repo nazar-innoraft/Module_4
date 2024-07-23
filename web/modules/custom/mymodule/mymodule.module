@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * This is hook function.
+ */
+
+/**
+ * Implements corn hook.
+ */
+function mymodule_cron() {
+  \Drupal::messenger()->addMessage(t("Hello I am nazar"));
+}
