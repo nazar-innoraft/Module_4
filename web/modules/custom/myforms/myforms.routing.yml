@@ -1,0 +1,15 @@
+myforms.example:
+  path: '/myforms/example'
+  defaults:
+    _title: 'Form'
+    _form: '\Drupal\myforms\Form\ExampleForm'
+  requirements:
+    _permission: 'access content'
+
+config.custom:
+  path: '/admin/config/config-form'
+  defaults:
+    _title: 'Config Form'
+    _form: '\Drupal\myforms\Form\myformsSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

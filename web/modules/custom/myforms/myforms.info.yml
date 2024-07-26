@@ -1,0 +1,8 @@
+name: 'MyForms'
+type: module
+description: 'This is form module'
+package: 'Form'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:admin_toolbar
+php: 8.2
