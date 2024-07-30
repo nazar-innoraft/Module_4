@@ -1,0 +1,5 @@
+name: 'Campaign'
+type: module
+description: 'This is campaign module'
+package: Nazar
+core_version_requirement: ^10 || ^11

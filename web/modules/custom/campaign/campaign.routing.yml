@@ -1,0 +1,8 @@
+campaign.value:
+  path: '/campaign/value/{num}'
+  defaults:
+    _title: 'Dymanic route'
+    _controller: '\Drupal\campaign\Controller\CampaignController'
+  requirements:
+    _role: administrator+content_editor
+    _permission: 'custom permission of campaign'
