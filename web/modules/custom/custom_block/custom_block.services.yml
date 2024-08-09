@@ -1,0 +1,9 @@
+services:
+  custom_block.example:
+    class: Drupal\custom_block\Example
+    arguments: ['@entity_type.manager']
+
+  custom_block.subscriber:
+    class: 'Drupal\custom_block\EventSubscriber\CustomBlockSubscriber'
+    tags:
+      - { name: event_subscriber }

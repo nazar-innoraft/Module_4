@@ -1,0 +1,7 @@
+block.settings.custom_block_1:
+  type: block_settings
+  label: 'Custom block title'
+  mapping:
+    example:
+      type: string
+      label: Example
