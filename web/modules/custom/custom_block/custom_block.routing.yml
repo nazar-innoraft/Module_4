@@ -1,0 +1,23 @@
+custom_block.example:
+  path: '/custom-welcome-page'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\custom_block\Controller\ExampleController'
+  requirements:
+    _permission: 'access content'
+
+custom_module.user_check:
+  path: '/user/{user_id}'
+  defaults:
+    _controller: '\Drupal\custom_block\Controller\ExampleController::checkLoggedIn'
+    _title: 'Check User Logged In'
+  requirements:
+    user_id: '\d+'
+    _query: 'check_logged_in'
+  options:
+    parameters:
+      user_id:
+        type: 'integer'
+      check_logged_in:
+        type: 'string'
+    _permission: 'access content'
