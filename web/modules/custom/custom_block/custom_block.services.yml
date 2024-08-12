@@ -1,0 +1,4 @@
+services:
+  custom_block.example:
+    class: Drupal\custom_block\Example
+    arguments: ['@entity_type.manager']

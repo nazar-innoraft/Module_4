@@ -1,0 +1,7 @@
+custom_block.example:
+  path: '/custom-welcome-page'
+  defaults:
+    _title: 'Hello User'
+    _controller: '\Drupal\custom_block\Controller\ExampleController'
+  requirements:
+    _permission: 'access content'
