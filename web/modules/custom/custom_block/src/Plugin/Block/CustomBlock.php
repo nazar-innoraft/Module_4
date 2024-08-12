@@ -59,7 +59,7 @@ class CustomBlock extends BlockBase implements ContainerFactoryPluginInterface {
   public function defaultConfiguration(): array {
     return [
       'pretext' => $this->t('Welcome,'),
-      'posttext' => $this->t(' How are you?'),
+      'posttext' => $this->t('How are you?'),
     ];
   }
 
@@ -96,7 +96,7 @@ class CustomBlock extends BlockBase implements ContainerFactoryPluginInterface {
     $user = $this->account->getDisplayName();
 
     $build['content'] = [
-      '#markup' => $this->t($this->configuration['pretext'] . '<b>@name</b>' . $this->configuration['posttext'], ['@name'=> strtoupper($user)]),
+      '#markup' => $this->t($this->configuration['pretext'] . '<b> @name </b>' . $this->configuration['posttext'], ['@name'=> strtoupper($user)]),
     ];
     return $build;
   }
