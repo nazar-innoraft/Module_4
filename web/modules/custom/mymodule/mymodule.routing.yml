@@ -1,0 +1,17 @@
+mymodule.simpleContent:
+  path: '/simple-content'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\FirstController::simpleContent'
+    _title: 'Simple page'
+  requirements:
+    _permissions: 'access content'
+    _role: administrator+content_editor
+
+mymodule.test:
+  path: '/mypage'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\FirstController::test'
+    _title: My Page
+  requirements:
+    _permission: 'new permis'
+

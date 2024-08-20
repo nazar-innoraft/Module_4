@@ -1,8 +1,8 @@
-name: 'module1'
+name: 'MyForms'
 type: module
-description: 'Nothing to write, I am Nazar thats it!'
+description: 'This is form module'
+package: 'Form'
 core_version_requirement: ^10 || ^11
-package: 'Nazar'
 dependencies:
   - drupal:admin_toolbar
 php: 8.2
