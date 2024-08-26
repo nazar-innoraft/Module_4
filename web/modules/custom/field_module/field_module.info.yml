@@ -1,0 +1,5 @@
+name: 'Field Module'
+type: module
+description: 'Field type module'
+package: Nazar
+core_version_requirement: ^10 || ^11

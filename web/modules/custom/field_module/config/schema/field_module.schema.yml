@@ -1,0 +1,31 @@
+field.value.field_module_type:
+  type: mapping
+  label: Default value
+  mapping:
+    value:
+      type: label
+      label: Value
+
+field.widget.settings.field_module_name:
+  type: mapping
+  label: Color value widget settings
+  mapping:
+    value:
+      type: integer
+      label: Value
+
+field.widget.settings.field_module_rgb_value:
+  type: mapping
+  label: RGB value widget settings
+  mapping:
+    value:
+      type: string
+      label: Value
+
+field.widget.settings.field_module_name_hex:
+  type: mapping
+  label: HEX value widget settings
+  mapping:
+    value:
+      type: string
+      label: Value
