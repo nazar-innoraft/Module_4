@@ -1,0 +1,22 @@
+awards.awards.*:
+  type: config_entity
+  label: Awards
+  mapping:
+    id:
+      type: string
+      label: ID
+    label:
+      type: string
+      label: label
+    uuid:
+      type: string
+      label: uuid
+    name:
+      type: string
+      label: name
+    year:
+      type: integer
+      label: year
+    description:
+      type: string
+      label: description

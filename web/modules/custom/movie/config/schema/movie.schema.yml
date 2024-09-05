@@ -1,0 +1,25 @@
+movie.movie.*:
+  type: config_entity
+  label: Awards
+  mapping:
+    id:
+      type: string
+      label: ID
+    label:
+      type: string
+      label: label
+    uuid:
+      type: string
+      label: uuid
+    title:
+      type: string
+      label: Title
+    movie_price:
+      type: integer
+      label: Movie Price
+    body:
+      type: string
+      label: Body
+    image:
+      type: image
+      label: Image

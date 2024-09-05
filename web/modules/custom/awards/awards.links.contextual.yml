@@ -1,0 +1,10 @@
+entity.awards.edit_form:
+  route_name: entity.awards.edit_form
+  group: awards
+  title: 'Edit'
+
+entity.awards.delete_form:
+  route_name: entity.awards.delete_form
+  group: awards
+  title: 'Delete'
+  weight: 10

@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+id: movie.movie_price
+field_name: movie_price
+entity_type: movie
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: number
+locked: false
+cardinality: 1
+translatable: false
+persist_with_no_fields: false
+custom_storage: false

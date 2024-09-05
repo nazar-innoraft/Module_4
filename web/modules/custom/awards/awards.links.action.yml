@@ -1,0 +1,5 @@
+awards.add_form:
+  title: 'Add awards'
+  route_name: entity.awards.add_form
+  appears_on:
+    - entity.awards.collection

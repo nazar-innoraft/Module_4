@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.movie.body
+  module:
+    - text
+  entity: movie
+id: movie.movie.body
+field_name: body
+entity_type: movie
+bundle: movie
+label: 'Body'
+description: 'Detailed description of the movie.'
+required: false
+translatable: true
+default_value: {  }
+settings:
+  display_summary: true
+field_type: text_with_summary

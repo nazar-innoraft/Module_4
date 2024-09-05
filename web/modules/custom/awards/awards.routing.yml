@@ -1,0 +1,31 @@
+entity.awards.settings:
+  path: 'admin/structure/awards'
+  defaults:
+    _form: '\Drupal\awards\Form\AwardsSettingsForm'
+    _title: 'Awards'
+  requirements:
+    _permission: 'administer awards'
+
+entity.awards.add_form:
+  path: '/admin/structure/awards/add'
+  defaults:
+    _entity_form: 'awards.add'
+    _title: 'Add an awards'
+  requirements:
+    _permission: 'administer awards'
+
+entity.awards.edit_form:
+  path: '/admin/structure/awards/{awards}'
+  defaults:
+    _entity_form: 'awards.edit'
+    _title: 'Edit an awards'
+  requirements:
+    _permission: 'administer awards'
+
+entity.awards.delete_form:
+  path: '/admin/structure/awards/{awards}/delete'
+  defaults:
+    _entity_form: 'awards.delete'
+    _title: 'Delete an awards'
+  requirements:
+    _permission: 'administer awards'

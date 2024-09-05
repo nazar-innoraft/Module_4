@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.movie.image
+  module:
+    - image
+  entity: movie
+id: movie.movie.image
+field_name: image
+entity_type: movie
+bundle: movie
+label: 'Movie Image'
+description: 'The cover image for the movie.'
+required: false
+translatable: false
+default_value: {  }
+settings: {  }
+field_type: image

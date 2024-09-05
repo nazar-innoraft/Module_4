@@ -1,0 +1,5 @@
+name: 'Movie'
+type: module
+description: 'Movie awards'
+package: Nazar
+core_version_requirement: ^10 || ^11

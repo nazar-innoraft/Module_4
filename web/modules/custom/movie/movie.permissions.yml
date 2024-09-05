@@ -1,0 +1,3 @@
+administer movie:
+  title: 'Administer movies'
+  restrict access: true

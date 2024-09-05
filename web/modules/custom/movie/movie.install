@@ -1,0 +1,51 @@
+<?php
+
+use Drupal\Core\Database\SchemaObject;
+
+/**
+ * Implements hook_install().
+ */
+function movie_module_install() {
+  drupal_install_schema('movie');
+}
+
+/**
+ * Implements hook_schema().
+ */
+function movie_module_schema() {
+  $schema['movie'] = [
+    'description' => 'The base table for Movie entities.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'title' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'bodydep' => [
+        'type' => 'text',
+        'not null' => FALSE,
+      ],
+      'movie_price' => [
+        'type' => 'float',
+        'not null' => FALSE,
+      ],
+      'image' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => FALSE,
+      ],
+      'uuid' => [
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}

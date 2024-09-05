@@ -1,0 +1,3 @@
+administer awards:
+  title: 'Administer awardss'
+  restrict access: true

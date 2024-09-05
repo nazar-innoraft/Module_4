@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies: {  }
+id: movie.image
+field_name: image
+entity_type: movie
+type: image
+settings:
+  uri_scheme: 'public'
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+  alt_field: true
+  title_field: true
+module: image
+locked: false
+cardinality: 1
+translatable: false
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+entity.awards.settings:
+  title: 'Awards'
+  description: 'Configure an Awards entity type.'
+  route_name:  entity.awards.settings
+  parent: system.admin_structure
+
+entity.awards.collection:
+  title: 'Awardss'
+  description: 'List of awardss.'
+  route_name: entity.awards.collection
+  parent: system.admin_content

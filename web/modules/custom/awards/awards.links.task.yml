@@ -1,0 +1,22 @@
+entity.awards.settings:
+  title: 'Settings'
+  route_name: entity.awards.settings
+  base_route: entity.awards.settings
+entity.awards.view:
+  title: 'View'
+  route_name: entity.awards.canonical
+  base_route: entity.awards.canonical
+entity.awards.edit_form:
+  title: 'Edit'
+  route_name: entity.awards.edit_form
+  base_route: entity.awards.canonical
+entity.awards.delete_form:
+  title: 'Delete'
+  route_name: entity.awards.delete_form
+  base_route: entity.awards.canonical
+  weight: 10
+entity.awards.collection:
+  title: 'Awardss'
+  route_name: entity.awards.collection
+  base_route: system.admin_content
+  weight: 10
