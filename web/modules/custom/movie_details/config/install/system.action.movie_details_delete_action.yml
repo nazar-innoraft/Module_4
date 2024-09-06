@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - movie_details
+id: movie_details_delete_action
+label: 'Delete movie detailss'
+type: movie_details
+plugin: entity:delete_action:movie_details
+configuration: {  }

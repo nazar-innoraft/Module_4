@@ -1,0 +1,15 @@
+entity.movie_details.settings:
+  path: 'admin/structure/movie-details'
+  defaults:
+    _form: '\Drupal\movie_details\Form\MovieDetailsSettingsForm'
+    _title: 'Movie details'
+  requirements:
+    _permission: 'administer movie_details'
+
+movie_details.movie_budget_settings:
+  path: '/admin/reports/movie-budget-settings'
+  defaults:
+    _form: '\Drupal\movie_details\Form\MovieDetailsConfigForm'
+    _title: 'Movie Budget Settings'
+  requirements:
+    _permission: 'administer movie_details'

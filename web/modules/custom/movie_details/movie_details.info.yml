@@ -1,5 +1,5 @@
-name: 'Movie'
+name: 'Movie Details'
 type: module
-description: 'Movie awards'
+description: 'Movie Details description'
 package: Nazar
 core_version_requirement: ^10 || ^11

@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Drupal\movie\Form;
+namespace Drupal\movie_details\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Configuration form for a movie entity type.
+ * Configuration form for a movie details entity type.
  */
-final class MovieSettingsForm extends FormBase {
+final class MovieDetailsSettingsForm extends FormBase {
 
   /**
    * {@inheritdoc}
    */
   public function getFormId(): string {
-    return 'movie_settings';
+    return 'movie_details_settings';
   }
 
   /**
@@ -25,7 +25,7 @@ final class MovieSettingsForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state): array {
 
     $form['settings'] = [
-      '#markup' => $this->t('Settings form for a movie entity type.'),
+      '#markup' => $this->t('Settings form for a movie details entity type.'),
     ];
 
     $form['actions'] = [

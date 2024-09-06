@@ -1,0 +1,66 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Provides a movie details entity type.
+ */
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function movie_details_theme(): array {
+  return [
+    'movie_details' => ['render element' => 'elements'],
+  ];
+}
+
+/**
+ * Prepares variables for movie details templates.
+ *
+ * Default template: movie-details.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the movie details information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_movie_details(array &$variables): void {
+  $variables['view_mode'] = $variables['elements']['#view_mode'];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for movie_details entity.
+ */
+function movie_details_preprocess_movie_details(array &$variables) {
+  // Load the movie_details entity.
+  $movie = $variables['elements']['#movie_details'];
+
+  // Load the config value for budget amount.
+  $config = \Drupal::config('movie_details.budget_settings');
+  $budget_amount = $config->get('budget_amount');
+
+  // Get the movie price field value from the entity.
+  $movie_price = $movie->get('movie_price')->value;
+
+  // Add budget message based on the conditions.
+  if ($movie_price > $budget_amount) {
+    $message = t('The movie is over budget.');
+  } elseif ($movie_price < $budget_amount) {
+    $message = t('The movie is under budget.');
+  } else {
+    $message = t('The movie is within budget.');
+  }
+
+  // Add the message to the variables to render in the template.
+  $variables['budget_message'] = [
+    '#markup' => '<div class="budget-message">' . $message . '</div>',
+  ];
+}

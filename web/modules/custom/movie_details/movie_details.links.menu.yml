@@ -1,0 +1,18 @@
+entity.movie_details.settings:
+  title: 'Movie details'
+  description: 'Configure a Movie details entity type.'
+  route_name:  entity.movie_details.settings
+  parent: system.admin_structure
+
+entity.movie_details.collection:
+  title: 'Movie detailss'
+  description: 'List of movie detailss.'
+  route_name: entity.movie_details.collection
+  parent: system.admin_content
+
+entity.movie_details.movie_budget_settings:
+  title: 'Movie Budget Settings'
+  description: 'Set the budget-friendly amount for movies.'
+  route_name: entity.movie_details.movie_details_config_form
+  parent: system.admin_reports
+

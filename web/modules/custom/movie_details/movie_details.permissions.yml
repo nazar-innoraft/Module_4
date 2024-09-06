@@ -1,0 +1,4 @@
+administer movie budget:
+  title: 'Administer movie budget settings'
+  description: 'Allows editing of movie budget settings'
+  restrict access: TRUE

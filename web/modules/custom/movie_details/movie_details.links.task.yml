@@ -1,0 +1,22 @@
+entity.movie_details.settings:
+  title: 'Settings'
+  route_name: entity.movie_details.settings
+  base_route: entity.movie_details.settings
+entity.movie_details.view:
+  title: 'View'
+  route_name: entity.movie_details.canonical
+  base_route: entity.movie_details.canonical
+entity.movie_details.edit_form:
+  title: 'Edit'
+  route_name: entity.movie_details.edit_form
+  base_route: entity.movie_details.canonical
+entity.movie_details.delete_form:
+  title: 'Delete'
+  route_name: entity.movie_details.delete_form
+  base_route: entity.movie_details.canonical
+  weight: 10
+entity.movie_details.collection:
+  title: 'Movie detailss'
+  route_name: entity.movie_details.collection
+  base_route: system.admin_content
+  weight: 10
