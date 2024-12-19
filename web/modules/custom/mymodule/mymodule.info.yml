@@ -1,7 +1,7 @@
-name: module1
+name: 'module1'
 type: module
-description: Nothing to write, I am Nazar that's it!
-core_version_requirement: ^10
+description: 'Nothing to write, I am Nazar thats it!'
+core_version_requirement: ^10 || ^11
 package: 'Nazar'
 dependencies:
   - drupal:admin_toolbar
